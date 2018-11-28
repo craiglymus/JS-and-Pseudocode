@@ -78,3 +78,4 @@ Steps:
 ## Resources
 [MDN Reference for the Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 # JS-and-Pseudocode
+# JS-and-Pseudocode
