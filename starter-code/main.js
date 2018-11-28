@@ -8,6 +8,13 @@
 
 */
 
+var name = 'Craig'
+var age = '75'
+var address = 'San Francsico'
+var greeting = 'Hello, my name is ' + name + '. I am ' + age + ' and live in ' + address 
+
+console.log(greeting);
+
 /*
 	Part 2: Create another variable called greeting2. This time, use the
 	new ES6 Syntax, string interpolation, to create the same greeting.
@@ -18,6 +25,11 @@
 	Check the console to make sure you're getting the desired result.
 
 */
+
+var greeting2 = `Hello, my name is ${name}. I am  ${age} and live in ${address}`
+
+console.log(greeting2);
+
 
 /*
 	Part 3: Pythagorean theorem. We will be using the Math object we saw earlier
@@ -43,6 +55,12 @@
 	Check the console to make sure you're getting the desired result.
 */
 
+var side1 = 8
+var side2 = 10
+var side3 = Math.pow(side1, 2) + Math.pow(side2, 2); 
+console.log(Math.sqrt(side3));
+// console.log(side3);
+
 /*
 	Part 4: (No coding is needed for this part).
 	We are given a list of 20 numbers. We have to go through the list and find the
@@ -56,6 +74,33 @@
 
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
+
+// We have 20 numbers but we only need the largest of the 20
+
+/////////
+// pseudocode
+
+// Look at every number one by one
+
+// If the next number is larger than the previous then forget the previous and keep the 
+// larger number.
+
+// Do this for all 20 numbers and keep the largest at the end
+// /////////
+
+// variable would be called largestNumber 
+
+// /////////
+
+// The pseudocode for the smallest number would be as follows...
+
+// Look at every number one by one
+
+// If the next number is smaller than the previous then forget the previous and keep the 
+// smaller number.
+
+// Do this for all 20 number and keep the smallest at the end
+
 
 
 /* Bonus
@@ -77,3 +122,14 @@ Steps:
 */
 
 var numbers = [20, 3, 5, 7, 13, 30];
+
+var highestNumber = 0
+
+
+for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] > highestNumber) {
+        highestNumber = numbers[i];
+    }
+};
+
+console.log(highestNumber);
